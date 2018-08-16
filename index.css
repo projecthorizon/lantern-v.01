@@ -41,7 +41,6 @@ h1 {
 .nav-bar {
   height: 50px;
   width: 100%;
-  margin-bottom: 50px;
   background: rgb(56, 74, 95);
 }
 
@@ -49,8 +48,32 @@ h1 {
  Header 
 ***********/
 
+header {
+  font-size: 1.2rem;
+}
+
 header span {
-  margin-left: 10px;
+  margin-left: 25px;
+}
+
+/***********
+ Sub-Nav
+***********/
+
+header,
+.sub-nav {
+  padding: 25px 0;
+  background-color: rgb(108, 168, 127);
+}
+
+header,
+.sub-nav a {
+  color: white;
+}
+
+.sub-nav a:hover {
+  color: rgb(56, 74, 95);
+  text-decoration: none;
 }
 
 /***********
