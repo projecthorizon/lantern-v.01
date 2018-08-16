@@ -9,7 +9,6 @@
 body {
   font-family: 'HKGrotesk', sans-serif;
   font-weight: 300;
-  color: rgb(59, 79, 94);
 }
 
 h1 {
@@ -20,28 +19,26 @@ h1 {
  Nav 
 ***********/
 
-.nav {
-  background: rgb(216, 219, 223);
-  border: 1px solid black;
-}
-
-.nav .container {
-  border: 1px solid white;
-}
-
 .nav .row {
+  padding: 1rem 0;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
-.nav h1,
 .nav a {
-  color: rgb(49, 65, 84);
+  color: rgb(56, 74, 95);
 }
 
 .nav a:hover {
-  color: rgb(97, 159, 115);
+  color: rgb(137, 146, 158);
   text-decoration: none;
+}
+
+.nav-bar {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 50px;
+  background: rgb(56, 74, 95);
 }
 
 /***********
