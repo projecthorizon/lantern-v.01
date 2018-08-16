@@ -4,14 +4,60 @@
 
 @font-face {
   font-family: 'HKGrotesk';
-  src: url('/fonts/HKGrotesk');
 }
 
 body {
   font-family: 'HKGrotesk', sans-serif;
   font-weight: 300;
+  color: rgb(59, 79, 94);
 }
 
 h1 {
   font-family: 'Muli', sans-serif;
+}
+
+/***********
+ Nav 
+***********/
+
+.nav {
+  background: rgb(216, 219, 223);
+  border: 1px solid black;
+}
+
+.nav .container {
+  border: 1px solid white;
+}
+
+.nav .row {
+  display: flex;
+  align-items: center;
+}
+
+.nav h1,
+.nav a {
+  color: rgb(49, 65, 84);
+}
+
+.nav a:hover {
+  color: rgb(97, 159, 115);
+  text-decoration: none;
+}
+
+/***********
+ Header 
+***********/
+
+header span {
+  margin-left: 10px;
+}
+
+/***********
+ Main 
+***********/
+
+#sub2,
+#sub3,
+#sub4 {
+  display: none;
 }
