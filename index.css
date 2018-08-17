@@ -43,8 +43,7 @@ h1 {
 }
 
 .nav .active a {
-  color: rgb(77, 77, 79);
-  font-weight: 600;
+  color: rgb(108, 168, 127);
 }
 
 .nav-bar-bot {
@@ -53,15 +52,29 @@ h1 {
   background: rgb(56, 74, 95);
 }
 
+.arrow-down-single-line,
+.arrow-down {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 5em;
+  width: 80%;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid white;
+}
+
+.arrow-down-single-line {
+  top: 4.1em;
+}
+
 /***********
  Header 
 ***********/
 
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
+  padding: 25px 0 0 0;
 }
 
 .hero-quote,
@@ -81,7 +94,7 @@ h1 {
 header,
 .sub-nav {
   min-height: 200px;
-  padding: 25px 0;
+  padding: 35px 0 0 0;
   background-color: rgb(108, 168, 127);
 }
 
@@ -90,7 +103,8 @@ header,
   color: white;
 }
 
-.sub-nav a:hover {
+.sub-nav a:hover,
+.active-sub a {
   color: rgb(56, 74, 95);
   text-decoration: none;
 }
@@ -135,7 +149,8 @@ header,
   top: -150px;
 }
 
-.section-up-small {
+.section-up-small,
+.section-up-small-main {
   position: relative;
   top: -50px;
 }
@@ -143,3 +158,51 @@ header,
 /***********
  Footer 
 ***********/
+
+/***********
+ Media Queries 
+***********/
+
+@media (min-width: 1200px) {
+  .line-break-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .arrow-down {
+    width: 90%;
+  }
+  .arrow-down-single-line {
+    top: 5em;
+  }
+}
+
+@media (max-width: 991px) {
+  .arrow-down,
+  .arrow-down-single-line {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .line-break,
+  .line-break-nav {
+    display: none;
+  }
+  .section-up-small-main {
+    position: static;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-up-small {
+    position: static;
+  }
+}
