@@ -75,7 +75,10 @@ h1 {
 ***********/
 
 .header {
-  padding: 25px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
 }
 
 .hero-quote,
@@ -191,24 +194,16 @@ header,
 @media (max-width: 991px) {
   .arrow-down,
   .arrow-down-single-line,
-  .arrow-down-narrow {
+  .arrow-down-narrow,
+  .line-break,
+  .line-break-nav {
     display: none;
   }
 }
 
 @media (max-width: 767px) {
-  .line-break,
-  .line-break-nav {
-    display: none;
-  }
   .section-up-small-main {
     position: static;
-  }
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
   }
 }
 
