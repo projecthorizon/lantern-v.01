@@ -121,9 +121,13 @@ header,
  Main 
 ***********/
 
+#sub1-a,
+#sub1-b {
+  display: inline-block;
+}
+
 #sub2,
-#sub3,
-#sub4 {
+#sub3 {
   display: none;
 }
 
@@ -141,6 +145,11 @@ header,
 
 .card-title {
   padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.card-title-holder {
+  padding-top: 20px;
 }
 
 .summary,
@@ -153,7 +162,8 @@ header,
   background-color: white;
 }
 
-.card-row-bot {
+.card-row-bot,
+.card-row-bot-special {
   padding-bottom: 50px;
   background-image: linear-gradient(white, rgb(228, 237, 230))
 }
@@ -192,6 +202,13 @@ header,
   }
   .arrow-down-single-line {
     top: 5em;
+  }
+  .card-title-holder {
+    padding: 0;
+  }
+  .card-row-bot-special {
+    padding-bottom: 0;
+    background-image: linear-gradient(white, white)
   }
 }
 

@@ -3,7 +3,7 @@ function toggleContainer(containerId) {
   const subNavLinks = document.querySelectorAll('.sub-nav a');
   // toggle divs
   for (let div of containers) {
-    if (containerId === div.id) div.style.display = 'block';
+    if (containerId === div.dataset.ref) div.style.display = 'block';
     else div.style.display = 'none';
   }
   // toggle active link
