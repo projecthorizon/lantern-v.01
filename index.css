@@ -17,7 +17,6 @@ body {
 body {
   font-family: 'HKGrotesk', sans-serif;
   font-weight: 300;
-  border: 1px solid red;
 }
 
 h1 {
@@ -43,9 +42,9 @@ h1 {
   text-decoration: none;
 }
 
-.nav .active {
+.nav .active a {
   color: rgb(77, 77, 79);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .nav-bar-bot {
@@ -114,20 +113,31 @@ header,
 .card-title,
 .summary {
   color: rgb(77, 77, 79);
-  padding-left: 5px;
+  padding: 0 5px;
 }
 
 .card-title {
   padding-top: 25px;
 }
 
-.summary {
+.summary,
+.section-container ul {
   font-size: 1.1em;
 }
 
 .card-row-top,
 .card-row-bot {
   background-color: white;
+}
+
+.section-up {
+  position: relative;
+  top: -150px;
+}
+
+.section-up-small {
+  position: relative;
+  top: -50px;
 }
 
 /***********

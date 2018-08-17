@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Muli:700"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Candidate Development</title>
+</head>
+
+<body>
+
+  <nav class="container-fluid nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 class="logo">
+            <a href="index.html">
+              Lantern
+            </a>
+          </h1>
+        </div>
+        <div class="col-md">
+          <h4>
+            <a href="why_we_exist.html">
+              Why We Exist
+            </a>
+          </h4>
+        </div>
+        <div class="col-md">
+          <h4>
+            <a href="what_we_do.html">
+              What We Do
+            </a>
+          </h4>
+        </div>
+        <div class="col-md">
+          <h4 class="active">
+            <a href="candidate.html">
+              Candidate Development
+            </a>
+          </h4>
+        </div>
+        <div class="col-md">
+          <h4>
+            <a href="recruiting.html">
+              Recruiting Services
+            </a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid nav-bar-bot"></div>
+
+  <header class="fluid-container header">
+    <nav class="container-fluid sub-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm offset-lg-4 sub-nav-btn">
+            <a href="#" onclick="toggleContainer('sub1');">
+              <h3>Career
+                <br>Discovery</h3>
+            </a>
+          </div>
+          <div class="col-sm sub-nav-btn">
+            <a href="#" onclick="toggleContainer('sub2');">
+              <h3>Immediate
+                <br>Employment</h3>
+            </a>
+          </div>
+          <div class="col-sm sub-nav-btn">
+            <a href="#" onclick="toggleContainer('sub3');">
+              <h3>Full Service
+                <br>Package</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="fluid-container section-container">
+    <div class="container card-container">
+      <div id="sub1" class="sub-container section-up-small">
+        <div class="row">
+          <div class="col-sm-10 col-lg-7 col-xl-6 card-row-top">
+            <h3 class="card-title">Career Discovery Package</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 col-lg-7 col-xl-6 card-row-bot">
+
+            <ul>
+              <li>Initial Interview + Goal Capture</li>
+              <li>Work Deep Dive</li>
+              <li>Psycho-Ed</li>
+              <li>Action Planning</li>
+            </ul>
+            <p class="summary">
+              Includes 4 hours of 1-on-1 coaching sessions, unlimited text
+              and email support, recorded and transcribed session
+              notes, evidence based Values/Skills/Strengths/Interests
+              inventories by certified practitioners, career
+              discovery and clarification, detailed personal
+              assessment package, resume/cover letter/LinkedIn
+              review & strategy, social media audit, personal
+              narrative development, career path planning and
+              strategy.
+              <br>
+              <br>
+              <span class="price">
+                Price: $950
+              </span>
+              <br>
+              <br>
+              <em class="disclaimer">
+                All of our candidate services include lifetime support and check-ins.
+                We invest in you for the long term.
+              </em>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="sub2" class="sub-container section-up-small">
+        <div class="row">
+          <div class="col-sm-10 col-lg-7 col-xl-6 card-row-top">
+            <h3 class="card-title">Immediate Employment Package</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 col-lg-7 col-xl-6 card-row-bot">
+            <ul>
+              <li>Work Deep Dive</li>
+              <li>Action Planning</li>
+              <li>Action Plan Presentation + Linkedin Training</li>
+              <li>Networking Tactics</li>
+            </ul>
+            <p class="summary">
+              Includes 5 hours of 1-on-1 coaching sessions, unlimited text
+              and email support goal setting, motivation and
+              accountability, unlimited text and email support,
+              recorded and transcribed session notes, detailed
+              personal assessment package, resume/cover letter/LinkedIn
+              review & strategy, social media audit, personal
+              narrative development, career path planning and
+              strategy.
+              <br>
+              <br>
+              <span class="price">
+                Price: $1185
+              </span>
+              <br>
+              <br>
+              <em class="disclaimer">
+                All of our candidate services include lifetime support and check-ins.
+                We invest in you for the long term.
+              </em>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="sub3" class="sub-container section-up-small">
+        <div class="row">
+          <div class="col-sm-10 col-lg-7 col-xl-6 card-row-top">
+            <h3 class="card-title">Full Service Package</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 col-lg-7 col-xl-6 card-row-bot">
+            <ul>
+              <li>Initial Interview + Goal Capture</li>
+              <li>Work Deep Dive</li>
+              <li>Pyscho-Ed</li>
+              <li>Action Planning</li>
+              <li>Action Plan Presentation + Linkedin Training</li>
+              <li>Networking Tactics</li>
+              <li>Interview and Negotiation Training + Roleplay</li>
+              <li>Company Research and Job Presentations</li>
+              <li>Active Opportunity Coaching</li>
+              <li>Career Technology Mapping</li>
+              <li>Post Placement Analysis</li>
+            </ul>
+            <p class="summary">
+              Includes 12+ hours of 1-on-1 coaching sessions, unlimited text
+              and email support, career discovery and clarification,
+              goal setting, motivation and accountability, unlimited
+              text and email support, recorded and transcribed
+              session notes, detailed personal assessment package,
+              resume/cover letter/LinkedIn review & strategy,
+              social media audit, personal narrative development,
+              career path planning and strategy, etc.
+              <br>
+              <br>
+              <span class="price">
+                Price: $950
+              </span>
+              <br>
+              <br>
+              <em class="disclaimer">
+                A la carte additional hours available. Choose any above service
+                and inquire for pricing. All of our candidate
+                services include lifetime support and check-ins.
+                We invest in you for the long term.
+              </em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
