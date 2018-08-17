@@ -53,6 +53,7 @@ h1 {
 }
 
 .arrow-down-single-line,
+.arrow-down-narrow,
 .arrow-down {
   display: flex;
   justify-content: center;
@@ -125,6 +126,7 @@ header,
 }
 
 .card-title,
+.card-sub-title,
 .summary {
   color: rgb(77, 77, 79);
   padding: 0 5px;
@@ -142,6 +144,11 @@ header,
 .card-row-top,
 .card-row-bot {
   background-color: white;
+}
+
+.card-row-bot {
+  padding-bottom: 50px;
+  background-image: linear-gradient(white, rgb(228, 237, 230))
 }
 
 .section-up {
@@ -167,6 +174,9 @@ header,
   .line-break-nav {
     display: none;
   }
+  .arrow-down-narrow {
+    width: 70%;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -180,7 +190,8 @@ header,
 
 @media (max-width: 991px) {
   .arrow-down,
-  .arrow-down-single-line {
+  .arrow-down-single-line,
+  .arrow-down-narrow {
     display: none;
   }
 }
@@ -202,6 +213,9 @@ header,
 }
 
 @media (max-width: 575px) {
+  .line-break-special {
+    display: none;
+  }
   .section-up-small {
     position: static;
   }
