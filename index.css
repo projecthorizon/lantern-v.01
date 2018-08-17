@@ -6,9 +6,18 @@
   font-family: 'HKGrotesk';
 }
 
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'HKGrotesk', sans-serif;
   font-weight: 300;
+  border: 1px solid red;
 }
 
 h1 {
@@ -20,9 +29,9 @@ h1 {
 ***********/
 
 .nav .row {
-  padding: 1rem 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  padding: 1.5em 0 1em 0;
 }
 
 .nav a {
@@ -30,15 +39,16 @@ h1 {
 }
 
 .nav a:hover {
-  color: rgb(137, 146, 158);
+  color: rgb(108, 168, 127);
   text-decoration: none;
 }
 
 .nav .active {
-  color: rgb(108, 168, 127);
+  color: rgb(77, 77, 79);
+  font-weight: 700;
 }
 
-.nav-bar {
+.nav-bar-bot {
   height: 50px;
   width: 100%;
   background: rgb(56, 74, 95);
@@ -48,12 +58,21 @@ h1 {
  Header 
 ***********/
 
-header {
-  font-size: 1.2rem;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
 }
 
-header span {
-  margin-left: 25px;
+.hero-quote,
+.hero-author {
+  font-size: 1.2em;
+}
+
+.hero-author {
+  margin-left: 1em;
+  margin-bottom: 0;
 }
 
 /***********
@@ -62,6 +81,7 @@ header span {
 
 header,
 .sub-nav {
+  min-height: 200px;
   padding: 25px 0;
   background-color: rgb(108, 168, 127);
 }
@@ -85,3 +105,31 @@ header,
 #sub4 {
   display: none;
 }
+
+.section-container {
+  flex: 1;
+  background-color: rgb(228, 237, 230);
+}
+
+.card-title,
+.summary {
+  color: rgb(77, 77, 79);
+  padding-left: 5px;
+}
+
+.card-title {
+  padding-top: 25px;
+}
+
+.summary {
+  font-size: 1.1em;
+}
+
+.card-row-top,
+.card-row-bot {
+  background-color: white;
+}
+
+/***********
+ Footer 
+***********/
